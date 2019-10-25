@@ -8,7 +8,12 @@ interpreter which uses the top-down recursive descent method and inhereted/synth
 <expr>			::= <term> { + <term> | - <term> } | if <cond> then <expr> else <expr>
 <term>			::= <factor> { * <factor> | / <factor> }
 <factor>		::= ( <expr> ) | id | number | <type>(id)
-<cond>			::= <oprnd> < <oprnd> | <oprnd> <= <oprnd> | <oprnd> > <oprnd> | <oprnd> >= <oprnd> | <oprnd> == <oprnd> | <oprnd> <> <oprnd>
+<cond>			::= <oprnd> < <oprnd>  |
+			    <oprnd> <= <oprnd> |
+			    <oprnd> > <oprnd>  |
+			    <oprnd> >= <oprnd> |
+			    <oprnd> == <oprnd> |
+			    <oprnd> <> <oprnd>
 <oprnd>			:= id | intnum
 ```
 # Sample Run
