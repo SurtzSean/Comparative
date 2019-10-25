@@ -1,6 +1,6 @@
-##Tiny Language using top down recursion
+# Tiny Language using top down recursion
 interpreter which uses the top-down recursive descent method and inhereted/synthesized attributes to parse and evaluate a simple programming language based on the following grammar:
-<code>
+```
 <prog> 		::= <let-in-end> { <let-in-end> }
 <let-in-end> 	:: = let <decl-list> in <type> ( <expr> ) end ;
 <decl>			::= id : <type> = <expr> ;
@@ -10,10 +10,10 @@ interpreter which uses the top-down recursive descent method and inhereted/synth
 <factor>		::= ( <expr> ) | id | number | <type>(id)
 <cond>			::= <oprnd> < <oprnd> | <oprnd> <= <oprnd> | <oprnd> > <oprnd> | <oprnd> >= <oprnd> | <oprnd> == <oprnd> | <oprnd> <> <oprnd>
 <oprnd>			:= id | intnum
-</code>
+```
 
-#Input
-<code>
+# Input
+```
 let x : int = 5 ;
 in
         int ( x + 3 * x )
@@ -46,10 +46,10 @@ let x : int = 1 ;
 		int ( int ( x ) )
 end ;
 let x = 8 ; in ( x + y ) end ;
-</code>
+```
 
-#Output
-<code>
+# Output
+```
 ~/Desktop/CIS424% ./let.py test.tiny
 20
 314.16
@@ -57,4 +57,4 @@ let x = 8 ; in ( x + y ) end ;
 40.0
 9
 1
-</code>
+```
