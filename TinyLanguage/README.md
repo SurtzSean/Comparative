@@ -1,8 +1,8 @@
 # Tiny Language using top down recursion
 interpreter which uses the top-down recursive descent method and inhereted/synthesized attributes to parse and evaluate a simple programming language based on the following grammar:
 ```
-<prog> 		::= <let-in-end> { <let-in-end> }
-<let-in-end> 	:: = let <decl-list> in <type> ( <expr> ) end ;
+<prog> 			::= <let-in-end> { <let-in-end> }
+<let-in-end> 		:: = let <decl-list> in <type> ( <expr> ) end ;
 <decl>			::= id : <type> = <expr> ;
 <type>			::= int | real
 <expr>			::= <term> { + <term> | - <term> } | if <cond> then <expr> else <expr>
