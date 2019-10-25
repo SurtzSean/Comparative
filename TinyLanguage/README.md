@@ -11,8 +11,8 @@ interpreter which uses the top-down recursive descent method and inhereted/synth
 <cond>			::= <oprnd> < <oprnd> | <oprnd> <= <oprnd> | <oprnd> > <oprnd> | <oprnd> >= <oprnd> | <oprnd> == <oprnd> | <oprnd> <> <oprnd>
 <oprnd>			:= id | intnum
 ```
-
-# Input
+# Sample Run
+#### Input
 ```
 let x : int = 5 ;
 in
@@ -48,7 +48,7 @@ end ;
 let x = 8 ; in ( x + y ) end ;
 ```
 
-# Output
+#### Output
 ```
 ~/Desktop/CIS424% ./let.py test.tiny
 20
