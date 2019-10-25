@@ -57,4 +57,5 @@ let x = 8 ; in ( x + y ) end ;
 40.0
 9
 1
+Error got:  =  expected:  :
 ```
